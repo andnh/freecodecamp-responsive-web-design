@@ -1,0 +1,117 @@
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem; // 16px
+}
+
+#main {
+  text-align: center;
+  background-color: #eeeeee;
+  padding: 15px;
+}
+
+#title {
+  margin: 20px 0;
+}
+
+#tribute-info {
+  // border: 3px solid green;
+  #achievement-list {
+    text-align: left;
+    list-style-position: inside;
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+    .achievement {
+      margin: 16px 0;
+    }
+  }
+  blockquote {
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+  }
+  .addition {
+    width: 70%;
+    margin: 0 auto;
+    iframe {
+      margin-top: 15px;
+    }
+  }
+}
+
+#img-div {
+  // border: 3px solid yellow;
+  background-color: white;
+  margin: 0;
+  padding: 20px 0;
+  img {
+    width: 100%;
+    max-width: 625px;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  #img-caption {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 980px) {
+  #img-div {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #main {
+    margin: 0;
+  }
+
+  body {
+    font-size: 1.4rem; // 14px
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+
+  #achievement-list {
+    line-height: 0.5;
+  }
+
+  #img-div {
+    padding: 12px;
+    #img-caption {
+      margin: 10px;
+    }
+  }
+
+  #tribute-info {
+    .addition {
+      width: 90%;
+      margin: 0 auto;
+      iframe {
+        margin-top: 15px;
+      }
+    }
+  }
+}

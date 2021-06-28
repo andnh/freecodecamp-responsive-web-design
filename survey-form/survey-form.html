@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Beathoven web performance Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the app
+        </p>
+      </header>
+      <form id="survey-form">
+        <fieldset>
+          <div>
+            <label for="name" id="name-label">Name</label>
+            <input
+              type="text"
+              name="name-label"
+              id="name"
+              placeholder="Enter Name"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" id="email-label">email</label>
+            <input
+              type="email"
+              name="email-label"
+              id="email"
+              placeholder="Enter Email"
+              required
+            />
+          </div>
+          <div>
+            <label for="number" id="numer-label">number</label>
+            <input
+              placeholder="Enter age"
+              type="number"
+              name="number-label"
+              id="number"
+              min="0"
+              max="100"
+            />
+          </div>
+          <div>
+            <label for="number" id="number-label">number</label>
+            <select type="number" name="number-label" id="dropdown">
+              <option value="">Timer</option>
+              <option value="">Auto-increse tempo</option>
+              <option value="">Color setting</option>
+              <option value="">Sound setting</option>
+            </select>
+          </div>
+          <div>
+            <input type="radio" id="html" name="fav_language" value="HTML" />
+            <label for="html">HTML</label><br />
+            <input type="radio" id="css" name="fav_language" value="CSS" />
+            <label for="css">CSS</label><br />
+            <input
+              type="radio"
+              id="javascript"
+              name="fav_language"
+              value="JavaScript"
+            />
+            <label for="javascript">JavaScript</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="" value="hi" />
+            <label for="">a</label>
+            <input type="checkbox" name="" id="" value="hi" />
+            <label for="">b</label>
+            <input type="checkbox" name="" id="" value="hi" />
+            <label for="">c</label>
+          </div>
+          <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
+          <button type="submit" id="submit">Send</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
